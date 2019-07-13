@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "one": "babel-node part1/index.js",
-    "two": "babel-node part2/index.js",
+    "dev": "babel-node src/index.js",
     "test": "jest"
   },
   "keywords": [],
