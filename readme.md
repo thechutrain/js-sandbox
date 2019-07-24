@@ -2,16 +2,29 @@
 
 > node.js + babel + es6 modules + jest
 
-## Getting started:
+## Features:
 
-Install dependencies
+- babel
+- es6 modules (babel)
+- jest
+- code runner (VS code)
+- debugging (VS Code)
+
+## Getting started:
 
 ```
 $ npm install
 ```
 
-Run `src/index.js` file
+## Trouble Shooting:
+
+#### Issues with Code Runner (VS Code extension)
+
+- ensure that you're using babel-node in your `settings.json`
 
 ```
-$ npm run dev
+"code-runner.executorMap": {
+  "javascript": "$workspaceRoot/node_modules/.bin/babel-node --harmony $fullFileName",
+  ...
+}
 ```
